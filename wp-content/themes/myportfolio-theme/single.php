@@ -3,13 +3,12 @@
 <div class="container section-padding">
     <div class="row">
         <div class="col-md-12">
-            <p><a href="<?php echo esc_url( home_url( '/blog/' ) ); ?>" class="btn btn-primary">Back to Blog</a></p>
-            <p><a href="#blog-post-content" class="btn btn-secondary">Jump to Content</a></p>
+            
             <?php
             if ( have_posts() ) :
                 while ( have_posts() ) : the_post();
                     ?>
-                    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                    <article id="blog-post-content" <?php post_class(); ?>>
                         <header class="entry-header">
                             <h1 class="entry-title"><?php the_title(); ?></h1>
                             <div class="entry-meta">
@@ -18,7 +17,7 @@
                             </div>
                         </header>
 
-                        <div class="entry-content" id="blog-post-content">
+                        <div class="entry-content">
                             <?php if ( has_post_thumbnail() ) : ?>
                                 <div class="post-thumbnail">
                                     <?php the_post_thumbnail( 'large' ); ?>
@@ -97,4 +96,18 @@
     </div>
 </div>
 
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function() {
+        setTimeout(function() {
+            const element = document.getElementById("blog-post-content");
+            if (element) {
+                element.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            }
+        }, 100); // Small delay to ensure rendering is complete
+    });
+</script>
+<?php get_footer(); ?>
 <?php get_footer(); ?>
