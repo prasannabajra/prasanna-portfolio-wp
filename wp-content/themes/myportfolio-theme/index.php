@@ -265,4 +265,19 @@
     </section>
     <!-- / END BLOG DESIGN AREA -->
 
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.hash === "#blog") {
+            setTimeout(function() {
+                const element = document.getElementById("blog");
+                if (element) {
+                    element.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+                }
+            }, 100); // Small delay to ensure rendering is complete
+        }
+    });
+</script>
 <?php get_footer(); ?>

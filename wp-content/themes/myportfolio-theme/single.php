@@ -101,9 +101,13 @@
         setTimeout(function() {
             const element = document.getElementById("blog-post-content");
             if (element) {
-                element.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start"
+                const offset = 100; // Adjust this value as needed
+                const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+                const offsetPosition = elementPosition - offset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
                 });
             }
         }, 100); // Small delay to ensure rendering is complete
