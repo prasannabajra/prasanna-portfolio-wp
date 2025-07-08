@@ -1,8 +1,11 @@
 /*
 * ----------------------------------------------------------------------------------------
-Author       : wordpressboss
-Template Name: Nista - Personal Portfolio Template
-Version      : 1.0
+Theme Name	: MyPortfolio Theme
+Theme URI	: https://prasannabajracharya.com.np
+Author		: Prasanna Bajracharya
+Author URI	: https://prasannabajracharya.com.np
+Description	: A custom theme for my portfolio website.
+Version		: 1.0
 * ----------------------------------------------------------------------------------------
 */
 
@@ -572,6 +575,21 @@ strong.text-rotator span {
     margin-right: 10px;
     color: #209CEE;
 }
+
+.download-resume{
+    text-align: center;
+    margin-left: 43%;
+}
+
+.about-me-left {
+    width: 100%;
+}
+
+.about-me-right {
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 100px;
+}
 /*
 * ----------------------------------------------------------------------------------------
 * 06.SERVICE CSS STYLE
@@ -1087,4 +1105,14 @@ ul.work li.active {
 
 .main {
     margin-bottom: 180px;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* BLOG CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.blog-area {
+	background: #fafafa;
 }
