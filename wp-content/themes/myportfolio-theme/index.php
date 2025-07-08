@@ -14,18 +14,18 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 col-sm-12">
+                <div class="col-md-6 col-sm-12 about-me-left">
                     <!-- START ABOUT TEXT AREA -->
                     <div class="about-text">
                         <h2 class="wow fadeInDown" data-wow-delay="0.4s"><?php echo esc_html( get_theme_mod( 'about_title', 'I\'m Prasanna Bajra Bajracharya and I\'m a software engineer.' ) ); ?></h2>
                         <p class="wow fadeInDown" data-wow-delay="0.6s"><?php echo esc_html( get_theme_mod( 'about_description_1', 'I am an experienced software engineer with a demonstrated history of working in the information technology & service industry. Skilled in SQL, Web applications, Window services, C# and .NET Framework. A strong engineering professional with a Bachelor’s degree in Computer Science and Information Technology, BSc. CSIT from Tribhuvan University, Nepal.' ) ); ?></p>
                         <p class="wow fadeInDown" data-wow-delay="0.6s"><?php echo esc_html( get_theme_mod( 'about_description_2', 'I am passionate about building excellent software that improves the lives of those around me. I specialize in creating software for clients ranging from individuals & small-businesses all the way to large enterprise corporations.' ) ); ?></p>
                         <p class="wow fadeInDown" data-wow-delay="0.6s"><?php echo esc_html( get_theme_mod( 'about_description_3', 'As a software engineer, I write code that conforms to industry standards & semantic best practices. I am able to transform static artwork into interactive and fully functional interfaces.' ) ); ?></p>
-                        <a class="wow fadeInDown" data-wow-delay=".8s" href="<?php echo esc_url( get_theme_mod( 'resume_pdf_link', get_template_directory_uri() . '/assets/files/prasannabajracharya_resume.pdf' ) ); ?>" target="_blank">Download resume</a>
+                        <a class="wow fadeInDown download-resume" data-wow-delay=".8s" href="<?php echo esc_url( get_theme_mod( 'resume_pdf_link', get_template_directory_uri() . '/assets/files/prasannabajracharya_resume.pdf' ) ); ?>" target="_blank">Download resume</a>
                     </div>
                     <!-- / END ABOUT TEXT AREA -->
                 </div>
-                <div class="col-md-6 col-sm-12">
+                <div class="col-md-6 col-sm-12 about-me-right">
                     <!-- START ABOUT TEXT AREA -->
                     <div class="about-right">
                         <ul class="wow fadeInUp" data-wow-delay="0.8s">
@@ -45,7 +45,7 @@
     <!-- / END ABOUT DESIGN AREA -->
 
     <!-- START SERVICES DESIGN AREA -->
-    <section class="service-area section-padding">
+    <section id="services" class="service-area section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -109,6 +109,7 @@
                 <ul class="work">
                     <li class="filter" data-filter="all">all</li>
                     <li class="filter" data-filter=".ebpearls">ebpearls</li>
+					<li class="filter" data-filter=".aerion">aerion technologies</li>
                     <li class="filter" data-filter=".freelance">freelance</li>
                     <!--<li class="filter" data-filter=".photography">photography-->
                 </ul>
